@@ -12,6 +12,8 @@ let myChart = null; // Inicializamos myChart a null
 
 /*funciones*/
 
+/*pegar a la api y transformar a formato js*/
+
 async function getIndicador() {
   try {
     const res = await fetch(apiURL);
