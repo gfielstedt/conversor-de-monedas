@@ -24,3 +24,26 @@ async function getIndicador() {
     alert("Error al conseguir los datos de conversión: " + error.message);
   }
 }
+
+async function crearGrafica() {
+  try {
+    // Utiliza los datos de la moneda seleccionada
+    const currencyData = selectedCurrencyData;
+
+    // Obtener las fechas y valores de las tasas para la moneda seleccionada
+    const labels = Object.keys(currencyData.fecha).slice(0, 10).reverse(); // Obtener las últimas 10 fechas
+    const data = labels.map((label) => currencyData.fecha[label]);
+
+    const datasets = [
+      {
+        label: `${tipoDeMoneda.value.toUpperCase()} a CLP`,
+        borderColor: "rgb(255, 99, 132)",
+        data: data,
+      },
+    ];
+
+    return { labels, datasets };
+  } catch (error) {
+    alert("Error al obtener los datos de la API: " + error.message);
+  }
+}
