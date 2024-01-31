@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 25px;
+  color: white;
+}
+
+#conversorDeMonedas {
+  background-color: gray;
+  color: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  max-width: 400px; /* Limita el ancho para mantenerlo centrado y responsivo */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#montoInput {
+  width: 94%;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  margin-right: 50px;
+}
+
+#monedasParaConvertir {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+#btnConvertir {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: lightskyblue;
+}
+
+#montoConvertido {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.grafica {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilos para hacer el gráfico responsivo */
+#myChart {
+  max-width: 100%; /* Hace que el gráfico se ajuste al ancho del contenedor */
+  height: auto; /* Ajusta automáticamente la altura */
+}
