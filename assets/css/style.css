@@ -45,6 +45,7 @@ h1 {
 #btnConvertir {
   width: 100%;
   padding: 10px;
+  color: white;
   border-radius: 4px;
   margin-bottom: 10px;
   background-color: lightskyblue;
