@@ -58,11 +58,12 @@ h1 {
 
 .grafica {
   text-align: center;
-  margin-top: 20px;
 }
 
 /* Estilos para hacer el gráfico responsivo */
 #myChart {
-  max-width: 100%; /* Hace que el gráfico se ajuste al ancho del contenedor */
-  height: auto; /* Ajusta automáticamente la altura */
+  width: 500px;
+  height: 300px;
+  /*max-width: 100%; /* Hace que el gráfico se ajuste al ancho del contenedor */
+  /*height: auto; /* Ajusta automáticamente la altura */
 }
